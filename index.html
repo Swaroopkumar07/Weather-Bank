@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            weather
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="script" href="script.js"> -->
+    </head>
+    <body>
+        <div class="header">
+            <div class="contents">
+                <h3 class="name">Weather Bank</h3>
+                <p class="home">Home</p>
+                <p class="about">AboutUs</p>
+            </div>
+            <div class="search">
+                <input  id ="city" type="search" style="border-radius: 3%;border-width: 1%;">
+                <button id="submits" type="submit" onclick="getData()">search</button>
+            </div>
+        </div>
+
+        <div class="weather">
+            <h1 style="text-align: center;font-style: oblique;" class="WeatherIn">weather in  <span id="cityname"></span></h1>
+        </div>
+
+        <div class="details">
+
+            <div class="temp">
+                <h1 >Temperature</h1>
+                <ul class="list">
+                    <li>Temparature is :<span id="temp"></span></li>
+                    <li>Min Temparature is :<span id="min_temp"></span></li>
+                    <li>Max Temparature is :  <span id="max_temp"></span></li>
+                </ul>
+            </div>
+
+            <div class="humidity">
+                <h1>Humidity info</h1>
+                <ul class="list">
+                    <li>Cloud PCT is : <span id="cloud_pct"></span></li>
+                    <li>Feels like : <span id="feels_like"></span></li>
+                    <li>Humidity is : <span id="humidity"></span></li>
+
+                </ul>
+
+            </div>
+
+            <div class="wind">
+                <h1>wind info</h1>
+                <ul class="list">
+                    <li>Wind Speed : <span id="wind_speed"></span></li>
+                    <li>Wind Degree : <span id="wind_degrees"></span></li>
+                    <li>Sunrise Time is : <span id="sunrise"></span></li>
+                    <li>Sun Set time is : <span id="sunset"></span> </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+ <script src="script.js">
+   
+        </script>
+    </body>
+</html>
